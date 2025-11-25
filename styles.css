@@ -1,0 +1,366 @@
+/* ==================== GLOBAL STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.menu img {
+    max-width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================== BUTTON STYLES ==================== */
+.btn {
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #FF5252;
+}
+
+/* ==================== CATEGORIES SECTION ==================== */
+.categories {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.category-card {
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    min-height: 200px;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+}
+
+.category-card-img {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.category-card-h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* ==================== PRODUCTS SECTION ==================== */
+.products {
+    padding: 80px 0;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-card-img {
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-card-h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF6B6B;
+    margin-bottom: 15px;
+}
+
+/* ==================== NEWSLETTER SECTION ==================== */
+.newsletter {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.newsletter-h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.newsletter-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter-form input::placeholder {
+    color: #999;
+}
+
+.newsletter-form button {
+    padding: 12px 30px;
+}
+
+/* ==================== MEDIA QUERIES - LAPTOP ==================== */
+@media (max-width: 1200px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+/* ==================== MEDIA QUERIES - TABLET ==================== */
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+}
+
+/* ==================== MEDIA QUERIES - MOBILE ==================== */
+@media (max-width: 640px) {
+    .header-content {
+        justify-content: space-between;
+    }
+
+    .logo img {
+        max-width: 120px;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .product-card {
+        padding: 15px;
+    }
+
+    .product-card-img {
+        height: 150px;
+    }
+
+    .product-card-h3 {
+        font-size: 18px;
+    }
+
+    .newsletter {
+        padding: 40px 0;
+    }
+
+    .newsletter-h2 {
+        font-size: 24px;
+    }
+
+    .newsletter-subtitle {
+        font-size: 14px;
+    }
+
+    .newsletter-form {
+        max-width: 100%;
+    }
+
+    .newsletter-form input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
