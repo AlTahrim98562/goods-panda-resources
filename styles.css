@@ -1,0 +1,439 @@
+/* ==================== GLOBAL STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== HEADER SECTION ==================== */
+.header {
+    padding: 30px 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.menu-icon img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.hero-price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==================== BUTTONS ==================== */
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: #e91e63;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #c2185b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+}
+
+.btn-secondary {
+    background: #000;
+    color: white;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* ==================== CATEGORIES SECTION ==================== */
+.categories {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #000;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.category-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.category-card.watch {
+    background: linear-gradient(135deg, #ffb74d 0%, #ffa726 100%);
+}
+
+.category-card.bag {
+    background: linear-gradient(135deg, #ff4081 0%, #e91e63 100%);
+}
+
+.category-card.shoes {
+    background: linear-gradient(135deg, #2e5090 0%, #1e3c72 100%);
+}
+
+.category-card img {
+    height: 80px;
+    width: auto;
+}
+
+.category-card h3 {
+    font-size: 24px;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+/* ==================== PRODUCTS SECTION ==================== */
+.products {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.shoes-section {
+    background: #f5f5f5;
+}
+
+.backpack-section {
+    background: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* ==================== NEWSLETTER SECTION ==================== */
+.newsletter {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    min-width: 300px;
+}
+
+.newsletter-form input::placeholder {
+    color: #ccc;
+}
+
+.newsletter-form button {
+    padding: 15px 40px;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Laptop (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+    .hero-text h1 {
+        font-size: 40px;
+    }
+    .hero-price {
+        font-size: 28px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+/* Tablet (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    .hero-price {
+        font-size: 24px;
+    }
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .category-card {
+        flex-direction: column;
+    }
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .product-card img {
+        height: 200px;
+    }
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-form input {
+        min-width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Mobile (max-width: 640px) */
+@media screen and (max-width: 640px) {
+    .container {
+        padding: 0 15px;
+    }
+    .header-content {
+        padding: 20px 0;
+    }
+    .logo img {
+        height: 40px;
+    }
+    .hero {
+        padding: 40px 0;
+    }
+    .hero-text h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .hero-text p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .hero-price {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .categories {
+        padding: 50px 0;
+    }
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .category-card {
+        flex-direction: row;
+        padding: 20px;
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .category-card img {
+        height: 60px;
+    }
+    .category-card h3 {
+        font-size: 20px;
+    }
+    .products {
+        padding: 50px 0;
+    }
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .product-card {
+        padding: 20px;
+    }
+    .product-card img {
+        height: 200px;
+    }
+    .product-card h3 {
+        font-size: 16px;
+    }
+    .product-price {
+        font-size: 18px;
+    }
+    .newsletter {
+        padding: 50px 0;
+    }
+    .newsletter-content h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .newsletter-content p {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .newsletter-form input {
+        padding: 12px 20px;
+        font-size: 14px;
+        min-width: 100%;
+    }
+    .newsletter-form button {
+        padding: 12px 30px;
+        width: 100%;
+    }
+}
